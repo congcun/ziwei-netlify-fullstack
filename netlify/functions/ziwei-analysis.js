@@ -150,8 +150,8 @@ ${palaces.map(palace =>
                                 content: prompt
                             }
                         ],
-                        temperature: 0.7,
-                        max_tokens: 2000
+                        temperature: 0.3,
+                        max_tokens: 1000
                     })
                 });
 
