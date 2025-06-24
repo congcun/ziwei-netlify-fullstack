@@ -1,4 +1,4 @@
-const { astro } = require('iztro');
+const iztro = require('iztro');
 
 // DeepSeek API配置
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'sk-your-deepseek-api-key';
