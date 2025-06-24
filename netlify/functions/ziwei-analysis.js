@@ -88,17 +88,7 @@ exports.handler = async (event, context) => {
         // === 2. DeepSeek AI分析 ===
         console.log('开始DeepSeek AI分析...');
         
-        const prompt = `作为一名专业的紫微斗数分析师，请基于以下紫微斗数排盘信息，为用户提供详细的性格特质分析和专业方向建议：
-
-【基本信息】
-姓名：${userInfo.name}
-性别：${userInfo.gender}
-出生日期：${userInfo.solarDate}（${userInfo.lunarDate}）
-生辰八字：${userInfo.chineseDate}
-生肖：${userInfo.zodiac}
-命主：${userInfo.soul}
-身主：${userInfo.body}
-五行局：${userInfo.fiveElementsClass}
+        const prompt = `作为一名专业的紫微斗数分析师，请基于以下紫微斗数排盘信息，为用户提供性格特质分析和专业方向建议：
 
 【宫位星曜分布】
 ${palaces.map(palace => 
@@ -123,14 +113,12 @@ ${palaces.map(palace =>
 ## 3. 学习方向建议
 - 推荐3-5个最适合的专业领域
 - 说明每个专业选择的紫微依据
-- 分析在这些领域的发展潜力
 
 ## 4. 发展建议
 - 提供具体的学习和发展路径
-- 指出需要注意的挑战和机遇
 - 给出实用的建议
 
-请用专业而易懂的语言，避免过于深奥的术语，重点关注实用性和指导性。`;
+请用简洁、易懂的语言，避免过于冗余、深奥的术语，重点关注实用性和指导性。`;
 
         let deepseekAnalysis = null;
         
