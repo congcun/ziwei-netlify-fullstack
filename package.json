@@ -1,0 +1,25 @@
+{
+  "name": "ziwei-netlify-functions",
+  "version": "1.0.0",
+  "description": "紫微斗数+霍兰德测试 Netlify Functions后端服务",
+  "main": "netlify/functions",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Building for production'",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "iztro": "^2.4.7"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": [
+    "紫微斗数", 
+    "霍兰德测试",
+    "netlify-functions",
+    "serverless"
+  ],
+  "author": "ziwei-team",
+  "license": "MIT"
+} 

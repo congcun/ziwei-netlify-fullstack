@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>紫微斗数+霍兰德职业测试 - 专业学习方向分析</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0xNiA4TDE4LjUgMTNIMjRMMTkuNSAxN0wyMSAyMkwxNiAxOUwxMSAyMkwxMi41IDE3TDggMTNIMTMuNUwxNiA4WiIgZmlsbD0id2hpdGUiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwX2xpbmVhcl8xXzEiIHgxPSIwIiB5MT0iMCIgeDI9IjMyIiB5Mj0iMzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2N2VlYSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3NjRiYTIiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K" type="image/svg+xml">
+    <style>
+        /* === 紫微斗数+霍兰德职业测试样式 === */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            --info-gradient: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            --success-gradient: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            --light-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            --primary-color: #667eea;
+            --secondary-color: #fab1a0;
+            --dark-color: #2d3436;
+            --light-color: #f8f9fa;
+            --gray-color: #636e72;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: var(--border-radius);
+            padding: 35px;
+            box-shadow: var(--box-shadow);
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--primary-gradient);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+        
+        .header h1 {
+            color: #2d3436;
+            margin-bottom: 12px;
+            font-size: 32px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .header p {
+            color: var(--gray-color);
+            font-size: 17px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .form-section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .card-title {
+            color: #444;
+            margin-bottom: 25px;
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .form-section h2 {
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 10px 20px rgba(255, 234, 167, 0.3);
+        }
+        
+        .btn-full {
+            width: 100% !important;
+        }
+        
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .loading.show {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+        
+        .loading-content {
+            text-align: center;
+            max-width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .ai-loading-animation {
+            position: relative;
+            margin: 20px auto;
+        }
+        
+        .ai-brain {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            position: relative;
+            animation: aiPulse 2s ease-in-out infinite;
+        }
+        
+        .ai-brain::before {
+            content: '🧠';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+        }
+        
+        .ai-dots {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .ai-dot {
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: aiDotWave 1.5s ease-in-out infinite;
+        }
+        
+        .ai-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .ai-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes aiPulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        @keyframes aiDotWave {
+            0%, 60%, 100% { transform: scale(1); opacity: 0.4; }
+            30% { transform: scale(1.2); opacity: 1; }
+        }
+        
+        .loading-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3436;
+            margin: 15px 0 5px;
+        }
+        
+        .loading-subtitle {
+            font-size: 14px;
+            color: #636e72;
+            line-height: 1.4;
+        }
+        
+        .loading-progress {
+            width: 100%;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        
+        .loading-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+            animation: loadingProgress 3s ease-in-out infinite;
+        }
+        
+        @keyframes loadingProgress {
+            0% { width: 10%; }
+            50% { width: 80%; }
+            100% { width: 95%; }
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .result-section {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            border: 2px solid #e1e5e9;
+        }
+        
+        .result-section.show {
+            display: block;
+        }
+        
+        .result-section h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .result-content {
+            /* 去除内部白色背景和边框，直接在外层卡片展示 */
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 25px;
+        }
+        
+        .result-content h4 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .result-content p {
+            line-height: 1.8;
+            color: #2d3436;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .recommendation-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .recommendation-card h5 {
+            color: #2d3436;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .recommendation-card .score {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        
+        .recommendation-card p {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 5px;
+        }
+        
+        .holland-scores {
+            margin-top: 15px;
+        }
+        
+        .score-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 15px;
+        }
+        
+        .score-label {
+            min-width: 100px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .score-bar {
+            flex: 1;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            transition: width 0.8s ease;
+        }
+        
+        .score-value {
+            min-width: 45px;
+            text-align: right;
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .holland-section {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 15px;
+            border: 2px solid #e1e5e9;
+        }
+        
+        .holland-section.show {
+            display: block;
+        }
+        
+        .holland-intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .holland-intro h3 {
+            color: #2d3436;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .holland-intro p {
+            color: #636e72;
+            line-height: 1.6;
+        }
+        
+        .holland-intro-content {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .holland-highlight-box {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffeaa7 100%) !important;
+            border: 2px solid #fdcb6e !important;
+            border-radius: 15px !important;
+            padding: 25px !important;
+            color: var(--dark-color) !important;
+            margin-bottom: 25px !important;
+            text-align: left !important;
+            box-shadow: 0 4px 15px rgba(253, 203, 110, 0.2) !important;
+        }
+        
+        .holland-highlight-box h3 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .holland-highlight-box p {
+            color: #6c5ce7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        .holland-features h4 {
+            color: var(--dark-color);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .holland-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .holland-features li {
+            color: #6c5ce7;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+        
+        .holland-test {
+            display: none;
+        }
+        
+        .holland-test.show {
+            display: block;
+        }
+        
+        .question-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .question-number {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .progress-bar {
+            background: #e1e5e9;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            flex: 1;
+            margin: 0 15px;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .question-text {
+            font-size: 18px;
+            color: #2d3436;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .option {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 20px 24px;
+            margin: 8px 0;
+            border: 2px solid #e9ecef;
+            border-radius: 16px;
+            background: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+            gap: 16px;
+        }
+        
+        .option:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+            background: #fafbff;
+        }
+        
+        .option.selected {
+            border-color: #667eea;
+            background: #f0f4ff;
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+        }
+        
+        .option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+        
+        .option-text {
+            flex: 1;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2d3436;
+            line-height: 1.4;
+        }
+        
+        .option.selected .option-text {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .option-selecting {
+            animation: selectPulse 0.6s ease;
+        }
+        
+        @keyframes selectPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        .auto-next-indicator {
+            position: absolute;
+            top: -8px;
+            right: 12px;
+            font-size: 11px;
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+            padding: 4px 8px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .option.selected .auto-next-indicator {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+        
+        .holland-result {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            border: 2px solid #e1e5e9;
+        }
+        
+        .holland-result.show {
+            display: block;
+        }
+        
+        .holland-scores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .score-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .score-item .type {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 5px;
+        }
+        
+        .score-item .name {
+            font-size: 12px;
+            color: #2d3436;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .score-item .score {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+            
+            .options {
+                grid-template-columns: 1fr;
+            }
+            
+            .holland-scores {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* 卡片收缩样式 */
+        .card.minimized {
+            max-height: 60px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .card.minimized .form,
+        .card.minimized .card-title svg,
+        .card.minimized .card-title::after {
+            display: none;
+        }
+
+        .card.minimized .card-title {
+            font-size: 16px;
+            margin-bottom: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title .expand-icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .card.minimized .card-title .expand-icon {
+            transform: rotate(180deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15 7L21 7L16 10L18 15L12 12L6 15L8 10L3 7L9 7L12 2Z" fill="#667eea"/>
+                <path d="M12 12L18 15L16 10L21 7L15 7L12 2L9 7L3 7L8 10L6 15L12 12Z" stroke="#764ba2" stroke-width="1.5"/>
+            </svg> 学习方向智能分析</h1>
+            <p class="subtitle">融合紫微斗数传统智慧与霍兰德职业理论，为您量身定制最佳学习发展路径</p>
+        </div>
+
+        <div class="card" id="personalInfoCard">
+            <h2 class="card-title" onclick="togglePersonalInfoCard()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88743 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00347 15.0615 4.60897C16.5233 5.21447 17.7727 6.23985 18.6518 7.55544C19.5308 8.87104 20 10.4178 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="#667eea"/>
+                    <path d="M12 7V12L16 14" stroke="#764ba2" stroke-width="2" stroke-linecap="round"/>
+                </svg> 
+                个人信息
+                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 14L12 9L17 14" stroke="#667eea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </h2>
+            
+            <form id="analysisForm" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#667eea"/>
+                            </svg>
+                            性别
+                        </label>
+                        <select id="gender" name="gender" required>
+                            <option value="">请选择性别</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthDate">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3 20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V10H19V20ZM19 8H5V6H19V8ZM9 14H7V12H9V14ZM13 14H11V12H13V14ZM17 14H15V12H17V14ZM9 18H7V16H9V18ZM13 18H11V16H13V18ZM17 18H15V16H17V18Z" fill="#667eea"/>
+                            </svg>
+                            出生日期
+                        </label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthTime">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 15.08L12.5 12.25V7Z" fill="#667eea"/>
+                        </svg>
+                        出生时辰
+                    </label>
+                    <select id="birthTime" name="birthTime" required>
+                        <option value="">请选择时辰</option>
+                        <option value="子时">子时 (23:00-01:00)</option>
+                        <option value="丑时">丑时 (01:00-03:00)</option>
+                        <option value="寅时">寅时 (03:00-05:00)</option>
+                        <option value="卯时">卯时 (05:00-07:00)</option>
+                        <option value="辰时">辰时 (07:00-09:00)</option>
+                        <option value="巳时">巳时 (09:00-11:00)</option>
+                        <option value="午时">午时 (11:00-13:00)</option>
+                        <option value="未时">未时 (13:00-15:00)</option>
+                        <option value="申时">申时 (15:00-17:00)</option>
+                        <option value="酉时">酉时 (17:00-19:00)</option>
+                        <option value="戌时">戌时 (19:00-21:00)</option>
+                        <option value="亥时">亥时 (21:00-23:00)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-full">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 16.5L4.5 11.5L5.91 10.09L9.5 13.67L18.09 5.09L19.5 6.5L9.5 16.5Z" fill="white"/>
+                    </svg>
+                    开始分析
+                </button>
+            </form>
+        </div>
+
+        <!-- 加载状态 -->
+        <div id="loading" class="loading">
+            <div class="loading-content">
+                <div class="ai-loading-animation">
+                    <div class="ai-brain"></div>
+                    <div class="ai-dots">
+                        <div class="ai-dot"></div>
+                        <div class="ai-dot"></div>
+                        <div class="ai-dot"></div>
+                    </div>
+                </div>
+                <div class="loading-text">DeepSeek AI 正在分析中</div>
+                <div class="loading-subtitle">请勿刷新页面或进行其他操作</div>
+                <div class="loading-progress">
+                    <div class="loading-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 紫微斗数分析结果 -->
+        <div id="result" class="card result-section">
+            <h2 class="card-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#667eea"/>
+                </svg>
+                紫微斗数分析结果
+            </h2>
+            
+            <div id="resultContent" class="result-content"></div>
+        </div>
+
+        <!-- 霍兰德测试推荐 -->
+        <div id="hollandRecommendation" class="card holland-section" style="display: none;">
+            <h2 class="card-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#667eea"/>
+                </svg>
+                进一步了解您的职业兴趣
+            </h2>
+            
+            <div class="holland-intro-content">
+                <div class="holland-highlight-box">
+                    <h3>霍兰德职业兴趣测试</h3>
+                    <p>基于您的紫微斗数分析，我们建议您进行霍兰德职业兴趣测试，以获得更全面的专业推荐。</p>
+                    
+                    <div class="holland-features">
+                        <h4>霍兰德测试能为您提供：</h4>
+                        <ul>
+                            <li>• 现代心理学视角的职业兴趣分析</li>
+                            <li>• RIASEC六维度专业匹配</li>
+                            <li>• 与紫微斗数分析的双重验证</li>
+                            <li>• 更精准的专业推荐</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="btn btn-full" id="startHollandBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V14L15 9.5L8 5Z" fill="currentColor"/>
+                    </svg>
+                    开始霍兰德职业测试
+                </button>
+            </div>
+        </div>
+
+        <!-- 霍兰德测试 -->
+        <div id="hollandTest" class="holland-test">
+            <div class="card">
+                <div class="question-header">
+                    <div class="question-number">第 <span id="currentQuestion">1</span> / 24 题</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 4.16%"></div>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-text" id="questionText">您对修理机械或电器设备的兴趣程度如何？</div>
+                    
+                    <div class="options" id="questionOptions">
+                        <label class="option">
+                            <input type="radio" name="currentAnswer" value="5">
+                            <span class="option-text">非常喜欢</span>
+                            <div class="auto-next-indicator">正在跳转...</div>
+                        </label>
+                        
+                        <label class="option">
+                            <input type="radio" name="currentAnswer" value="4">
+                            <span class="option-text">比较喜欢</span>
+                            <div class="auto-next-indicator">正在跳转...</div>
+                        </label>
+                        
+                        <label class="option">
+                            <input type="radio" name="currentAnswer" value="3">
+                            <span class="option-text">一般</span>
+                            <div class="auto-next-indicator">正在跳转...</div>
+                        </label>
+                        
+                        <label class="option">
+                            <input type="radio" name="currentAnswer" value="2">
+                            <span class="option-text">不太喜欢</span>
+                            <div class="auto-next-indicator">正在跳转...</div>
+                        </label>
+                        
+                        <label class="option">
+                            <input type="radio" name="currentAnswer" value="1">
+                            <span class="option-text">非常不喜欢</span>
+                            <div class="auto-next-indicator">正在跳转...</div>
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-full" id="nextQuestion" disabled style="display: none;">
+                        下一题
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5L16 12L9 19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 霍兰德测试结果 -->
+        <div id="hollandResult" class="card holland-result">
+            <h2 class="card-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.5 16.5L4.5 11.5L5.91 10.09L9.5 13.67L18.09 5.09L19.5 6.5L9.5 16.5Z" fill="#667eea"/>
+                </svg>
+                霍兰德职业兴趣测试结果
+            </h2>
+            
+            <div id="hollandResultContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // ===== 页面初始化 =====
+        
+        // 页面加载检查
+        window.addEventListener('load', function() {
+            if (typeof hideLoading !== 'function') {
+                alert('页面加载异常，请刷新页面重试');
+            }
+        });
+
+        // 全局变量
+        let currentQuestionIndex = 0;
+        let hollandAnswers = [];
+        let ziweiResult = null;
+
+        // 时辰映射 - 映射到具体小时数，以便后端正确处理
+        const timeMapping = {
+            '子时': 0,   // 00:00 (23:00-01:00)
+            '丑时': 2,   // 02:00 (01:00-03:00)
+            '寅时': 4,   // 04:00 (03:00-05:00)
+            '卯时': 6,   // 06:00 (05:00-07:00)
+            '辰时': 8,   // 08:00 (07:00-09:00)
+            '巳时': 10,  // 10:00 (09:00-11:00)
+            '午时': 12,  // 12:00 (11:00-13:00)
+            '未时': 14,  // 14:00 (13:00-15:00)
+            '申时': 16,  // 16:00 (15:00-17:00)
+            '酉时': 18,  // 18:00 (17:00-19:00)
+            '戌时': 20,  // 20:00 (19:00-21:00)
+            '亥时': 22   // 22:00 (21:00-23:00)
+        };
+
+        // 霍兰德测试题目
+        const hollandQuestions = [
+            // R - 现实型 (Realistic)
+            { text: '修理机械或电器设备', type: 'R' },
+            { text: '从事户外工作或体力劳动', type: 'R' },
+            { text: '操作机器或使用工具', type: 'R' },
+            { text: '制作手工艺品或木工活', type: 'R' },
+            
+            // I - 研究型 (Investigative)
+            { text: '进行科学实验或研究', type: 'I' },
+            { text: '分析数据和解决复杂问题', type: 'I' },
+            { text: '学习新的科学知识', type: 'I' },
+            { text: '独立思考和探索未知领域', type: 'I' },
+            
+            // A - 艺术型 (Artistic)
+            { text: '创作艺术作品或设计', type: 'A' },
+            { text: '表演音乐、戏剧或舞蹈', type: 'A' },
+            { text: '写作小说、诗歌或剧本', type: 'A' },
+            { text: '装饰房间或设计服装', type: 'A' },
+            
+            // S - 社会型 (Social)
+            { text: '帮助他人解决问题', type: 'S' },
+            { text: '教授或培训他人', type: 'S' },
+            { text: '参与社区服务活动', type: 'S' },
+            { text: '照顾病人或老人', type: 'S' },
+            
+            // E - 企业型 (Enterprising)
+            { text: '领导团队完成项目', type: 'E' },
+            { text: '销售产品或服务', type: 'E' },
+            { text: '组织活动或会议', type: 'E' },
+            { text: '管理企业或部门', type: 'E' },
+            
+            // C - 常规型 (Conventional)
+            { text: '整理文件和数据', type: 'C' },
+            { text: '按照规定程序工作', type: 'C' },
+            { text: '记录和统计信息', type: 'C' },
+            { text: '处理财务或会计工作', type: 'C' }
+        ];
+
+        // 霍兰德类型描述
+        const hollandTypes = {
+            'R': { name: '现实型', description: '喜欢具体的、实际的工作，善于使用工具和操作机械设备' },
+            'I': { name: '研究型', description: '喜欢观察、学习、研究、分析、评估或解决问题' },
+            'A': { name: '艺术型', description: '具有丰富的想象力和创造力，喜欢在自由、开放的环境中表达自己' },
+            'S': { name: '社会型', description: '关心他人福利，乐于助人，善于与人交往' },
+            'E': { name: '企业型', description: '具有领导才能，善于说服和管理他人' },
+            'C': { name: '常规型', description: '喜欢有秩序、安定的工作环境，善于处理数据和细节工作' }
+        };
+
+        // API调用状态管理
+        let isAPICallInProgress = false;
+
+        // 显示加载状态
+        function showLoading(message = 'DeepSeek AI 正在分析中', subtitle = '请勿刷新页面或进行其他操作') {
+            // 防止重复调用
+            if (isAPICallInProgress) {
+                return false;
+            }
+            
+            isAPICallInProgress = true;
+            
+            const loading = document.getElementById('loading');
+            const loadingText = loading.querySelector('.loading-text');
+            const loadingSubtitle = loading.querySelector('.loading-subtitle');
+            
+            if (loadingText) {
+                loadingText.textContent = message;
+            }
+            if (loadingSubtitle) {
+                loadingSubtitle.textContent = subtitle;
+            }
+            
+            loading.classList.add('show');
+            
+            // 禁用所有可点击元素
+            disableAllInteractions();
+            
+            return true;
+        }
+
+        // 隐藏加载状态
+        function hideLoading() {
+            const loading = document.getElementById('loading');
+            loading.classList.remove('show');
+            
+            // 重新启用所有交互
+            enableAllInteractions();
+            
+            // 重置API调用状态
+            isAPICallInProgress = false;
+            
+        }
+
+        // 禁用所有用户交互
+        function disableAllInteractions() {
+            // 禁用所有按钮
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.style.opacity = '0.6';
+                btn.style.cursor = 'not-allowed';
+            });
+            
+            // 禁用所有表单元素
+            const formElements = document.querySelectorAll('input, select, textarea');
+            formElements.forEach(element => {
+                element.disabled = true;
+                element.style.opacity = '0.6';
+            });
+            
+            // 禁用霍兰德测试选项
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.style.pointerEvents = 'none';
+                option.style.opacity = '0.6';
+            });
+        }
+
+        // 恢复所有用户交互
+        function enableAllInteractions() {
+            // 恢复所有按钮
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.disabled = false;
+                btn.style.opacity = '';
+                btn.style.cursor = '';
+            });
+            
+            // 恢复所有表单元素
+            const formElements = document.querySelectorAll('input, select, textarea');
+            formElements.forEach(element => {
+                element.disabled = false;
+                element.style.opacity = '';
+            });
+            
+            // 恢复霍兰德测试选项
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.style.pointerEvents = '';
+                option.style.opacity = '';
+            });
+        }
+
+        // 安全的API调用包装器
+        async function safeAPICall(apiFunction, loadingMessage, loadingSubtitle) {
+            if (!showLoading(loadingMessage, loadingSubtitle)) {
+                return; // 如果已有API调用在进行，直接返回
+            }
+            
+            try {
+                const result = await apiFunction();
+                return result;
+            } catch (error) {
+                
+                
+                // 显示用户友好的错误信息
+                let userMessage = '';
+                if (error.message.includes('fetch')) {
+                    userMessage = '网络连接失败，请检查网络连接或稍后重试';
+                } else if (error.message.includes('timeout')) {
+                    userMessage = '请求超时，服务器响应较慢，请稍后重试';
+                } else if (error.message.includes('HTTP 500')) {
+                    userMessage = '服务器内部错误，请稍后重试或联系技术支持';
+                } else if (error.message.includes('所有API端点都无法连接')) {
+                    userMessage = error.message;
+                } else {
+                    userMessage = `分析失败: ${error.message}`;
+                }
+                
+                alert(userMessage);
+                throw error;
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // 表单提交处理
+        document.getElementById('analysisForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // 验证表单
+            if (!data.gender || !data.birthDate || !data.birthTime) {
+                alert('请填写完整的个人信息');
+                return;
+            }
+            
+            await analyzeZiwei(data);
+        });
+
+        // 监听出生时辰选择，自动触发分析
+        document.getElementById('birthTime').addEventListener('change', function() {
+            const gender = document.getElementById('gender').value;
+            const birthDate = document.getElementById('birthDate').value;
+            const birthTime = this.value;
+            
+            // 检查是否所有必填项都已填写
+            if (gender && birthDate && birthTime) {
+                
+                const data = {
+                    name: '用户', // 默认姓名
+                    gender: gender,
+                    birthDate: birthDate,
+                    birthTime: birthTime,
+                    birthPlace: '北京' // 默认出生地点
+                };
+                
+                // 自动开始分析
+                analyzeZiwei(data);
+            }
+        });
+
+        // 分析紫微斗数
+        async function analyzeZiwei(data) {
+            const result = document.getElementById('result');
+            result.classList.remove('show');
+            
+            // 使用安全的API调用
+            await safeAPICall(
+                async () => {
+                    const requestData = {
+                        name: data.name || '用户',
+                        gender: data.gender,
+                        birthYear: new Date(data.birthDate).getFullYear(),
+                        birthMonth: new Date(data.birthDate).getMonth() + 1,
+                        birthDay: new Date(data.birthDate).getDate(),
+                        birthHour: timeMapping[data.birthTime],
+                        birthMinute: 0,
+                        location: data.birthPlace || '北京'
+                    };
+
+
+                    // 调用Netlify Functions API
+                    const response = await fetch('/api/ziwei-analysis', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(requestData)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const resultData = await response.json();
+
+                    if (resultData.success) {
+                        // 保存分析结果
+                        window.ziweiAnalysisResult = resultData.data;
+                        
+                        // 显示分析结果
+                        displayZiweiAnalysis(resultData.data);
+                        return resultData;
+                    } else {
+                        throw new Error(resultData.message || '紫微斗数分析失败');
+                    }
+                },
+                '正在进行紫微斗数分析',
+                '紫微斗数排盘和AI分析中'
+            );
+        }
+
+        // 显示紫微斗数分析结果
+        function displayZiweiAnalysis(data) {
+            hideLoading();
+            
+            const resultSection = document.getElementById('result');
+            const resultContent = document.getElementById('resultContent');
+            
+            const { userInfo, deepseekAnalysis } = data;
+            
+            let html = `
+                <div class="result-content">
+                    <h4>📊 基本信息</h4>
+                    <p><strong>姓名：</strong>${userInfo.name}</p>
+                    <p><strong>性别：</strong>${userInfo.gender}</p>
+                    <p><strong>出生：</strong>${userInfo.solarDate} (${userInfo.lunarDate})</p>
+                    <p><strong>生辰八字：</strong>${userInfo.chineseDate}</p>
+                    <p><strong>生肖：</strong>${userInfo.zodiac}</p>
+                    <p><strong>命主：</strong>${userInfo.soul}</p>
+                    <p><strong>身主：</strong>${userInfo.body}</p>
+                    <p><strong>五行局：</strong>${userInfo.fiveElementsClass}</p>
+                </div>
+
+                <div class="result-content">
+                    <h4>🔮 DeepSeek AI 紫微斗数分析</h4>
+                    <div class="analysis-content">
+                        ${formatAnalysisContent(deepseekAnalysis?.content || deepseekAnalysis)}
+                    </div>
+                    <p class="analysis-meta">
+                        <small>分析模型: ${deepseekAnalysis?.model || 'DeepSeek-V3'} | 分析时间: ${deepseekAnalysis?.timestamp ? new Date(deepseekAnalysis.timestamp).toLocaleString() : new Date().toLocaleString()}</small>
+                    </p>
+                </div>
+            `;
+            
+            resultContent.innerHTML = html;
+            resultSection.classList.add('show');
+            
+            // 保存分析结果以供后续使用
+            window.ziweiAnalysisResult = data;
+            
+            // 显示霍兰德测试推荐
+            setTimeout(() => {
+                showHollandRecommendation();
+            }, 500);
+        }
+
+        // 格式化分析内容
+        function formatAnalysisContent(content) {
+            if (!content) return '<p>分析内容暂时无法显示</p>';
+            
+            // 将Markdown格式转换为HTML
+            return content
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')  // 粗体
+                .replace(/### (.*?)$/gm, '<h4>$1</h4>')           // 三级标题
+                .replace(/## (.*?)$/gm, '<h3>$1</h3>')            // 二级标题
+                .replace(/# (.*?)$/gm, '<h2>$1</h2>')             // 一级标题
+                .replace(/\n\n/g, '</p><p>')                      // 段落
+                .replace(/\n- /g, '<br>• ')                       // 列表项
+                .replace(/^\s*-\s/gm, '• ')                       // 列表项开头
+                .replace(/^(?!<[h2-6]|<p|<br|•)(.+)$/gm, '<p>$1</p>'); // 包装段落
+        }
+
+        // 显示霍兰德测试推荐
+        function showHollandRecommendation() {
+            const recommendationHtml = `
+                <div class="holland-highlight-box" style="margin-top: 25px;">
+                    <h3>🎯 进一步了解自己</h3>
+                    <p>基于您的紫微斗数分析，我们建议您进行霍兰德职业兴趣测试，以获得更全面的专业选择建议。</p>
+                    
+                    <div class="holland-features">
+                        <h4>霍兰德测试能为您提供：</h4>
+                        <ul>
+                            <li>• 现代心理学视角的职业兴趣分析</li>
+                            <li>• RIASEC六维度专业匹配</li>
+                            <li>• 与紫微斗数分析的双重验证</li>
+                            <li>• 更精准的专业推荐</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn-secondary btn-full" onclick="startHollandTest()" style="margin-top: 15px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5V14L15 9.5L8 5Z" fill="currentColor"/>
+                        </svg>
+                        开始霍兰德职业测试
+                    </button>
+                </div>
+            `;
+            
+            document.getElementById('resultContent').innerHTML += recommendationHtml;
+        }
+
+        // DOM 加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 绑定事件
+            // 旧的事件监听器已被移除，现在使用onclick直接处理
+        });
+
+        // 表单提交处理
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // 验证表单
+            if (!data.gender || !data.birthDate || !data.birthTime) {
+                alert('请填写完整的个人信息');
+                return;
+            }
+            
+            analyzeZiwei(data);
+        }
+
+        // 出生时辰选择处理
+        function handleBirthTimeChange() {
+            const gender = document.getElementById('gender').value;
+            const birthDate = document.getElementById('birthDate').value;
+            const birthTime = this.value;
+            
+            if (gender && birthDate && birthTime) {
+                const data = {
+                    name: '用户',
+                    gender: gender,
+                    birthDate: birthDate,
+                    birthTime: birthTime,
+                    birthPlace: '北京'
+                };
+                analyzeZiwei(data);
+            }
+        }
+
+        // 个人信息卡片收缩/展开控制
+        function togglePersonalInfoCard() {
+            const card = document.getElementById('personalInfoCard');
+            const expandIcon = card.querySelector('.expand-icon');
+            
+            if (card.classList.contains('minimized')) {
+                // 展开
+                card.classList.remove('minimized');
+            } else {
+                // 收缩
+                card.classList.add('minimized');
+            }
+        }
+
+        // 开始霍兰德测试 - 增强版
+        function startHollandTest() {
+            const resultElement = document.getElementById('result');
+            const hollandElement = document.getElementById('hollandRecommendation');
+            const testElement = document.getElementById('hollandTest');
+            const personalInfoCard = document.getElementById('personalInfoCard');
+            
+            if (resultElement) resultElement.style.display = 'none';
+            if (hollandElement) hollandElement.style.display = 'none';
+            
+            // 收缩个人信息卡片
+            personalInfoCard.classList.add('minimized');
+            
+            // 初始化霍兰德测试
+            currentQuestionIndex = 0;
+            hollandAnswers = [];
+            
+            testElement.classList.add('show');
+            testElement.scrollIntoView({ behavior: 'smooth' });
+            
+            // 显示第一题
+            displayCurrentQuestion();
+            
+        }
+
+        // 显示当前题目 - 增强版支持自动跳转
+        function displayCurrentQuestion() {
+            const question = hollandQuestions[currentQuestionIndex];
+            const questionText = document.getElementById('questionText');
+            const questionOptions = document.getElementById('questionOptions');
+            const currentQuestionSpan = document.getElementById('currentQuestion');
+            const progressFill = document.getElementById('progressFill');
+            const nextButton = document.getElementById('nextQuestion');
+
+            // 更新题目编号和进度
+            currentQuestionSpan.textContent = currentQuestionIndex + 1;
+            const progress = ((currentQuestionIndex + 1) / hollandQuestions.length) * 100;
+            progressFill.style.width = progress + '%';
+
+            // 显示题目文本
+            questionText.textContent = question.text;
+
+            // 生成选项 - 增强版支持自动跳转
+            questionOptions.innerHTML = `
+                <div class="option-group">
+                    <label class="option" onclick="selectOptionAndNext(this, 5)">
+                        <input type="radio" name="currentAnswer" value="5">
+                        <span class="option-text">非常喜欢</span>
+                        <div class="auto-next-indicator">正在跳转...</div>
+                    </label>
+                    <label class="option" onclick="selectOptionAndNext(this, 4)">
+                        <input type="radio" name="currentAnswer" value="4">
+                        <span class="option-text">比较喜欢</span>
+                        <div class="auto-next-indicator">正在跳转...</div>
+                    </label>
+                    <label class="option" onclick="selectOptionAndNext(this, 3)">
+                        <input type="radio" name="currentAnswer" value="3">
+                        <span class="option-text">一般</span>
+                        <div class="auto-next-indicator">正在跳转...</div>
+                    </label>
+                    <label class="option" onclick="selectOptionAndNext(this, 2)">
+                        <input type="radio" name="currentAnswer" value="2">
+                        <span class="option-text">不太喜欢</span>
+                        <div class="auto-next-indicator">正在跳转...</div>
+                    </label>
+                    <label class="option" onclick="selectOptionAndNext(this, 1)">
+                        <input type="radio" name="currentAnswer" value="1">
+                        <span class="option-text">非常不喜欢</span>
+                        <div class="auto-next-indicator">正在跳转...</div>
+                    </label>
+                </div>
+            `;
+
+            // 隐藏下一题按钮（因为现在是自动跳转）
+            nextButton.style.display = 'none';
+
+            // 更新按钮文本（用于最后一题的完成测试）
+            if (currentQuestionIndex === hollandQuestions.length - 1) {
+                nextButton.textContent = '完成测试';
+            } else {
+                nextButton.textContent = '下一题';
+            }
+        }
+
+        // 选择选项并自动跳转到下一题
+        function selectOptionAndNext(optionElement, value) {
+            // 防止重复选择
+            if (optionElement.classList.contains('selected')) {
+                return;
+            }
+
+            // 清除其他选项的选中状态
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            // 设置当前选项为选中状态
+            optionElement.classList.add('selected', 'option-selecting');
+            
+            // 设置radio button为选中状态
+            const radioButton = optionElement.querySelector('input[type="radio"]');
+            if (radioButton) {
+                radioButton.checked = true;
+            }
+            
+            // 保存答案
+            hollandAnswers.push({
+                questionIndex: currentQuestionIndex,
+                type: hollandQuestions[currentQuestionIndex].type,
+                score: parseInt(value)
+            });
+
+
+            // 检查是否是最后一题
+            if (currentQuestionIndex === hollandQuestions.length - 1) {
+                // 最后一题，延迟完成测试
+                setTimeout(() => {
+                    finishHollandTest();
+                }, 500);
+            } else {
+                // 延迟跳转到下一题
+                setTimeout(() => {
+                    currentQuestionIndex++;
+                    displayCurrentQuestion();
+                }, 500);
+            }
+        }
+
+        // 完成霍兰德测试
+        function finishHollandTest() {
+            
+            // 计算得分
+            const scores = { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 };
+            
+            hollandAnswers.forEach(answer => {
+                scores[answer.type] += answer.score;
+            });
+
+
+            // 开始综合分析
+            submitHollandTest();
+        }
+
+        // 提交霍兰德测试
+        async function submitHollandTest() {
+            
+            if (hollandAnswers.length !== 24) {
+                alert('测试数据不完整，请重新开始测试');
+                return;
+            }
+
+            // 检查是否有必要的紫微分析数据
+            if (!window.ziweiAnalysisResult || !window.ziweiAnalysisResult.userInfo) {
+                alert('缺少紫微斗数分析数据，请先完成个人信息填写');
+                return;
+            }
+
+            // 使用安全的API调用
+            await safeAPICall(
+                async () => {
+                    // 转换答案格式为API需要的格式
+                    const answersForAPI = hollandAnswers.map(answer => answer.score);
+                    
+
+                    // 构建请求数据
+                    const requestData = {
+                        name: window.ziweiAnalysisResult.userInfo.name || '用户',
+                        gender: window.ziweiAnalysisResult.userInfo.gender,
+                        birthYear: new Date(window.ziweiAnalysisResult.userInfo.solarDate).getFullYear(),
+                        birthMonth: new Date(window.ziweiAnalysisResult.userInfo.solarDate).getMonth() + 1,
+                        birthDay: new Date(window.ziweiAnalysisResult.userInfo.solarDate).getDate(),
+                        birthHour: window.ziweiAnalysisResult.userInfo.birthHour || 8,
+                        birthMinute: window.ziweiAnalysisResult.userInfo.birthMinute || 0,
+                        location: window.ziweiAnalysisResult.userInfo.location || '北京',
+                        hollandAnswers: answersForAPI,
+                        ziweiAnalysis: window.ziweiAnalysisResult
+                    };
+
+
+                    // 调用Netlify Functions API
+                    const response = await fetch('/api/holland-test', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            answers: answersForAPI,
+                            userInfo: {
+                                name: window.ziweiAnalysisResult.userInfo.name,
+                                gender: window.ziweiAnalysisResult.userInfo.gender,
+                                ziweiInfo: window.ziweiAnalysisResult
+                            }
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        displayHollandAnalysis(result.data);
+                        return result;
+                    } else {
+                        throw new Error(result.message || '霍兰德测试分析失败');
+                    }
+                },
+                '正在进行综合分析',
+                '正在结合紫微斗数与霍兰德测试进行深度分析...'
+            );
+        }
+
+        // 显示霍兰德分析结果
+        function displayHollandAnalysis(data) {
+            hideLoading();
+            
+            // 隐藏霍兰德测试区域
+            const hollandElement = document.getElementById('hollandTest');
+            if (hollandElement) {
+                hollandElement.style.display = 'none';
+            }
+            
+            // 显示霍兰德分析结果
+            const resultSection = document.getElementById('result');
+            const resultContent = document.getElementById('resultContent');
+            
+            const { hollandCode, scores, primaryTypes, analysis } = data;
+            
+            // 类型名称映射
+            const typeNames = {
+                R: '现实型', I: '研究型', A: '艺术型',
+                S: '社会型', E: '企业型', C: '常规型'
+            };
+            
+            let hollandHtml = `
+                <div class="result-content">
+                    <h4>🎯 霍兰德职业兴趣测试结果</h4>
+                    <p><strong>您的霍兰德代码：</strong>${hollandCode}</p>
+                    <p><strong>主要类型：</strong>${typeNames[primaryTypes[0].type]} (${primaryTypes[0].type}型)</p>
+                    <p><strong>主要得分：</strong>${primaryTypes[0].score}分</p>
+                </div>
+
+                <div class="result-content">
+                    <h4>📊 各维度得分详情</h4>
+                    <div class="holland-scores">
+                        ${Object.entries(scores).map(([type, score]) => `
+                            <div class="score-item">
+                                <span class="score-label">${typeNames[type]}(${type})</span>
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: ${(score / 20) * 100}%"></div>
+                                </div>
+                                <span class="score-value">${score}分</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="result-content">
+                    <h4>🤖 DeepSeek AI 霍兰德分析</h4>
+                    <div class="analysis-content">
+                        ${formatAnalysisContent(analysis.content)}
+                    </div>
+                    <p class="analysis-meta">
+                        <small>分析模型: ${analysis.model} | 分析时间: ${new Date(analysis.timestamp).toLocaleString()}</small>
+                    </p>
+                </div>
+
+                <div class="result-content" style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white;">
+                    <h4>💡 双重分析总结</h4>
+                    <p>您已完成紫微斗数和霍兰德测试的双重分析！</p>
+                    <p><strong>建议您：</strong></p>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>对比两种分析方法的共同推荐</li>
+                        <li>重点关注重复出现的专业方向</li>
+                        <li>结合个人实际情况综合考虑</li>
+                        <li>可保存此分析作为升学参考</li>
+                    </ul>
+                </div>
+            `;
+            
+            // 合并之前的紫微分析结果
+            const currentContent = resultContent.innerHTML;
+            resultContent.innerHTML = currentContent + hollandHtml;
+            
+            resultSection.style.display = 'block';
+            resultSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 显示综合分析结果
+        function displayCombinedAnalysis(data) {
+            hideLoading();
+            
+            // 隐藏霍兰德测试区域
+            const hollandElement = document.getElementById('hollandTest');
+            if (hollandElement) {
+                hollandElement.style.display = 'none';
+            }
+            
+            // 显示综合分析结果
+            const resultSection = document.getElementById('result');
+            const resultContent = document.getElementById('resultContent');
+            
+            const { userInfo, ziweiAnalysis, hollandResult, combinedAnalysis } = data;
+            
+            let html = `
+                <div class="result-content">
+                    <h4>🎉 综合分析完成</h4>
+                    <p><strong>分析对象：</strong>${userInfo.name} (${userInfo.gender})</p>
+                    <p><strong>分析方法：</strong>紫微斗数 + 霍兰德职业兴趣测试</p>
+                    <p><strong>分析时间：</strong>${new Date(data.timestamp).toLocaleString()}</p>
+                </div>
+
+                <div class="result-content">
+                    <h4>🔮 紫微斗数分析摘要</h4>
+                    <p><strong>命主：</strong>${userInfo.soul} | <strong>身主：</strong>${userInfo.body}</p>
+                    <p><strong>五行局：</strong>${userInfo.fiveElementsClass}</p>
+                    <p><strong>生辰八字：</strong>${userInfo.chineseDate}</p>
+                </div>
+
+                <div class="result-content">
+                    <h4>🎯 霍兰德测试结果</h4>
+                    <p><strong>主要类型：</strong>${hollandResult.primaryTypeName} (${hollandResult.primaryType}型)</p>
+                    <p><strong>霍兰德代码：</strong>${hollandResult.hollandCode}</p>
+                    <p><strong>得分：</strong>${hollandResult.primaryScore}分</p>
+                    
+                    <h5>🏆 前三类型得分：</h5>
+                    <div class="recommendations">
+                        ${hollandResult.topThreeTypes.map((type, index) => `
+                            <div class="recommendation-card">
+                                <h6>${index + 1}. ${type.name} (${type.type}型)</h6>
+                                <p><strong>得分：</strong>${type.score}分 (${type.percentage}%)</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="result-content">
+                    <h4>🤖 DeepSeek AI 综合分析</h4>
+                    <div class="analysis-content">
+                        ${formatAnalysisContent(combinedAnalysis.content)}
+                    </div>
+                    <p class="analysis-meta">
+                        <small>分析模型: ${combinedAnalysis.model} | 分析时间: ${new Date(combinedAnalysis.timestamp).toLocaleString()}</small>
+                    </p>
+                </div>
+
+                <div class="result-content" style="background: linear-gradient(135deg, #00b894 0%, #00a085 100%); color: white;">
+                    <h4>✨ 分析总结</h4>
+                    <p>本次分析结合了中华传统紫微斗数和现代心理学霍兰德理论，为您提供了全面的专业选择建议。</p>
+                    <p><strong>建议您：</strong></p>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>重点关注两种分析方法都推荐的专业</li>
+                        <li>结合个人兴趣和实际情况做最终决定</li>
+                        <li>可以将此分析作为专业选择的重要参考</li>
+                        <li>建议与专业的升学指导老师进一步讨论</li>
+                    </ul>
+                </div>
+            `;
+            
+            resultContent.innerHTML = html;
+            resultSection.style.display = 'block';
+            resultSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 页面加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // 绑定表单提交事件
+            const analysisForm = document.getElementById('analysisForm');
+            if (analysisForm) {
+                analysisForm.addEventListener('submit', handleFormSubmit);
+            }
+
+            // 绑定出生时辰选择事件
+            const birthTimeSelect = document.getElementById('birthTime');
+            if (birthTimeSelect) {
+                birthTimeSelect.addEventListener('change', handleBirthTimeChange);
+            }
+
+            // 绑定霍兰德测试按钮事件
+            const startHollandBtn = document.getElementById('startHollandBtn');
+            if (startHollandBtn) {
+                startHollandBtn.addEventListener('click', startHollandTest);
+            }
+        });
+    </script>
+</body>
+</html>
