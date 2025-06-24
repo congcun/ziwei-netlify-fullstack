@@ -53,8 +53,7 @@ exports.handler = async (event, context) => {
         // === 1. IZTRO紫微斗数排盘 ===
         console.log('开始IZTRO排盘...');
         
-        const astrolabe = iztro.astro(birthYear, birthMonth, birthDay, birthHour, gender === '女' ? 'female' : 'male');
-        
+        const astrolabe = iztro.astro.astrolabeBySolarDate(birthYear, birthMonth, birthDay, birthHour, gender === '女' ? 'female' : 'male');        
         if (!astrolabe) {
             throw new Error('IZTRO排盘失败');
         }
