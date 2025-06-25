@@ -158,7 +158,6 @@ exports.handler = async (event, context) => {
 【基本信息】
 性别：${userInfo.gender}
 生辰八字：${userInfo.chineseDate}
-生肖：${userInfo.zodiac}
 
 
 【宫位星曜分布】
@@ -172,20 +171,13 @@ ${Object.keys(palaces).map(palaceName => {
 请从以下几个方面进行分析：
 
 ## 1. 性格特质分析
-- 基于命宫主星分析核心性格
-- 基于身宫特质分析行为模式
-- 基于三方四正分析性格的完整面貌
+- 基于命宫、迁移宫、财帛宫、官禄公主星综合分析
 
 ## 2. 天赋能力分析
-- 基于官禄宫分析适合的职业类型
-- 基于财帛宫分析财富获取方式
-- 基于福德宫分析内在驱动力
 
 ## 3. 学习方向建议
 - 推荐3-5个最适合的专业领域
 - 说明每个专业选择的紫微依据
-- 分析在这些领域的发展潜力
-
 
 先讲结论，用简洁、易懂的语言，避免过于冗余、深奥的术语，重点关注实用性和指导性。`;
 
@@ -208,7 +200,7 @@ ${Object.keys(palaces).map(palaceName => {
                             }
                         ],
                         temperature: 0.3,
-                        max_tokens: 1000
+                        max_tokens: 500
                     })
                 });
 
@@ -277,9 +269,6 @@ function generateDefaultAnalysis(userInfo, palaces) {
     
     return {
         content: `## 紫微斗数分析报告
-
-### 基本信息
-您的命宫位于${mingPalace.heavenlyStem}${mingPalace.earthlyBranch}，主星为${majorStars}，五行局为${userInfo.fiveElementsClass}。
 
 ### 性格特质
 基于您的紫微斗数排盘，您具有以下特质：
