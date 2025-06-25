@@ -172,18 +172,24 @@ function analyzeHollandResult(scores) {
     const primaryType = sortedTypes[0].type;
     const hollandCode = sortedTypes.slice(0, 3).map(t => t.type).join('');
 
-    return {
-        primaryType: primaryType,
-        primaryTypeName: typeNames[primaryType],
-        primaryScore: sortedTypes[0].score,
-        hollandCode: hollandCode,
-        scores: scores,
-        sortedTypes: sortedTypes,
-        characteristics: getTypeCharacteristics(primaryType),
-        workEnvironment: getWorkEnvironment(primaryType),
-        developmentSuggestion: getDevelopmentSuggestion(primaryType),
-        majorRecommendations: generateMajorRecommendations(primaryType)
-    };
+ return {
+    primaryType: primaryType,
+    primaryTypeName: typeNames[primaryType],
+    primaryScore: sortedTypes[0].score,
+    hollandCode: hollandCode,
+    scores: scores,
+    sortedTypes: sortedTypes,
+    topThreeTypes: sortedTypes.slice(0, 3).map(item => ({
+        type: item.type,
+        name: item.name,
+        score: item.score,
+        percentage: Math.round((item.score / 20) * 100)
+    })),
+    characteristics: getTypeCharacteristics(primaryType),
+    workEnvironment: getWorkEnvironment(primaryType),
+    developmentSuggestion: getDevelopmentSuggestion(primaryType),
+    majorRecommendations: generateMajorRecommendations(primaryType)
+};
 }
 
 function getTypeCharacteristics(type) {
