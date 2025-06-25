@@ -1640,19 +1640,7 @@
 
 
                     // 调用Netlify Functions API
-                    const response = await fetch('/api/combined-analysis', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            answers: answersForAPI,
-                            userInfo: {
-                                name: window.ziweiAnalysisResult.userInfo.name,
-                                gender: window.ziweiAnalysisResult.userInfo.gender,
-                                ziweiInfo: window.ziweiAnalysisResult
-                            }
-                        })
+                   body: JSON.stringify(requestData)
                     });
 
                     if (!response.ok) {
