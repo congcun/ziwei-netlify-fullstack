@@ -1650,11 +1650,11 @@
                     const result = await response.json();
 
                     if (result.success) {
-                        displayHollandAnalysis(result.data);
+                       displayCombinedAnalysis(result.data);
                         return result;
-                    } else {
-                        throw new Error(result.message || '霍兰德测试分析失败');
-                    }
+                        } else {
+                       throw new Error(result.message || '综合分析失败');
+                   }
                 },
                 '正在进行综合分析',
                 '正在结合紫微斗数与霍兰德测试进行深度分析...'
