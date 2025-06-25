@@ -156,14 +156,10 @@ exports.handler = async (event, context) => {
         const prompt = `作为一名专业的紫微斗数分析师，请基于以下紫微斗数排盘信息，为用户提供详细的性格特质分析和专业方向建议：
 
 【基本信息】
-姓名：${userInfo.name}
 性别：${userInfo.gender}
-出生日期：${userInfo.solarDate}（${userInfo.lunarDate}）
 生辰八字：${userInfo.chineseDate}
 生肖：${userInfo.zodiac}
-命主：${userInfo.soul}
-身主：${userInfo.body}
-五行局：${userInfo.fiveElementsClass}
+
 
 【宫位星曜分布】
 ${Object.keys(palaces).map(palaceName => {
@@ -190,12 +186,8 @@ ${Object.keys(palaces).map(palaceName => {
 - 说明每个专业选择的紫微依据
 - 分析在这些领域的发展潜力
 
-## 4. 发展建议
-- 提供具体的学习和发展路径
-- 指出需要注意的挑战和机遇
-- 给出实用的建议
 
-请用专业而易懂的语言，避免过于深奥的术语，重点关注实用性和指导性。`;
+先讲结论，用简洁、易懂的语言，避免过于冗余、深奥的术语，重点关注实用性和指导性。`;
 
         let deepseekAnalysis = null;
         
@@ -215,8 +207,8 @@ ${Object.keys(palaces).map(palaceName => {
                                 content: prompt
                             }
                         ],
-                        temperature: 0.7,
-                        max_tokens: 2000
+                        temperature: 0.3,
+                        max_tokens: 1000
                     })
                 });
 
@@ -291,7 +283,6 @@ function generateDefaultAnalysis(userInfo, palaces) {
 
 ### 性格特质
 基于您的紫微斗数排盘，您具有以下特质：
-- 命主${userInfo.soul}，身主${userInfo.body}，体现了您的核心性格特征
 - ${userInfo.fiveElementsClass}的特质影响着您的思维模式和行为方式
 
 ### 学习方向建议
