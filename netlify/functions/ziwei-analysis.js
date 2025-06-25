@@ -199,8 +199,8 @@ ${Object.keys(palaces).map(palaceName => {
                                 content: prompt
                             }
                         ],
-                        temperature: 0.3,
-                        max_tokens: 600
+                        temperature: 0.4,
+                        max_tokens: 500
                     })
                 });
 
