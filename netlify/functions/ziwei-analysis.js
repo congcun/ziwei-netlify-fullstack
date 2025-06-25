@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Content-Type': 'application/json'
     };
-
+    
     // 处理OPTIONS预检请求
     if (event.httpMethod === 'OPTIONS') {
         return {
@@ -153,7 +153,7 @@ exports.handler = async (event, context) => {
         // === 2. DeepSeek AI分析 ===
         console.log('开始DeepSeek AI分析...');
         
-        const prompt = `作为一名专业的紫微斗数分析师，请基于以下紫微斗数排盘信息，为用户提供详细的性格特质分析和专业方向建议：
+        const prompt = `作为一名专业的紫微斗数分析师，请基于以下排盘信息，为用户提供性格特质分析和专业方向建议：
 
 【基本信息】
 性别：${userInfo.gender}
@@ -179,7 +179,7 @@ ${Object.keys(palaces).map(palaceName => {
 - 推荐3-5个最适合的专业领域
 - 说明每个专业选择的紫微依据
 
-先讲结论，用简洁、易懂的语言，避免过于冗余、深奥的术语，重点关注实用性和指导性。`;
+直接讲结论，用简洁、易懂的语言，不要带专业的宫位、星曜信息，避免过于冗余、深奥的术语，重点关注实用性和指导性。`;
 
         let deepseekAnalysis = null;
         
@@ -200,7 +200,7 @@ ${Object.keys(palaces).map(palaceName => {
                             }
                         ],
                         temperature: 0.3,
-                        max_tokens: 500
+                        max_tokens: 600
                     })
                 });
 
