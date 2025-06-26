@@ -347,7 +347,7 @@ async function callDeepSeekForCombinedAnalysis(ziweiData, hollandResult, userDat
                         }
                     ],
                     temperature: 0.4,
-                    max_tokens: 1500  // 减少token数量以加快响应
+                    max_tokens: 500  // 减少token数量以加快响应
                 }),
                 signal: controller.signal
             });
@@ -382,21 +382,12 @@ function buildZiweiAnalysisPrompt(userInfo, palaces, userData) {
     return `请基于以下紫微斗数排盘信息，为${name}（${gender}）提供专业的性格分析和专业选择建议：
 
 【基本信息】
-- 姓名：${name}
-- 性别：${gender}
-- 出生日期：${userInfo.solarDate}（${userInfo.lunarDate}）
 - 生辰八字：${userInfo.chineseDate}
-- 生肖：${userInfo.zodiac}
-- 命主：${userInfo.soul}
-- 身主：${userInfo.body}
-- 五行局：${userInfo.fiveElementsClass}
 
 请从以下维度进行分析：
 1. **性格特质分析**：基于命宫配置
 2. **天赋才能分析**：结合各宫位特点
-3. **适合的专业领域**：基于星曜特质
-4. **具体专业推荐**：提供3-5个最适合的大学专业
-5. **学习发展建议**：针对性的能力培养建议
+3. **具体专业推荐**：提供3-5个最适合的大学专业
 
 请提供专业、详细的分析报告。`;
 }
@@ -407,11 +398,6 @@ function buildCombinedAnalysisPrompt(ziweiData, hollandResult, userData) {
     
     return `请综合以下紫微斗数和霍兰德职业兴趣测试结果，为${name}（${gender}）提供全面的专业选择建议：
 
-【紫微斗数信息】
-- 命主：${userInfo.soul}
-- 身主：${userInfo.body}
-- 五行局：${userInfo.fiveElementsClass}
-- 生辰八字：${userInfo.chineseDate}
 
 【霍兰德测试结果】
 - 主要类型：${hollandResult.primaryTypeName}（${hollandResult.primaryType}型）
@@ -428,7 +414,6 @@ ${ziweiData.deepseekAnalysis?.content || '暂无紫微分析'}
 2. **性格特质综合**：结合两种分析方法的性格特点总结
 3. **专业推荐整合**：基于两种分析的专业推荐，并说明匹配度
 4. **发展路径建议**：结合传统智慧与现代心理学的发展建议
-5. **特别提醒**：需要注意的潜在问题或发展瓶颈
 
 请提供专业、全面的综合分析报告。`;
 }
@@ -439,10 +424,6 @@ function generateDefaultZiweiAnalysis(userInfo, userData) {
         type: 'default',
         content: `基于${userData.name}的紫微斗数排盘信息：
 
-**基本信息**
-- 命主：${userInfo.soul}
-- 身主：${userInfo.body}  
-- 五行局：${userInfo.fiveElementsClass}
 
 **性格特质**
 根据您的紫微斗数配置，您具有独特的性格特质和天赋潜能。
@@ -462,7 +443,6 @@ function generateDefaultCombinedAnalysis(ziweiData, hollandResult, userData) {
         content: `${userData.name}的综合分析报告：
 
 ## 双重验证分析
-紫微斗数显示您的命主为${ziweiData.userInfo.soul}，身主为${ziweiData.userInfo.body}，五行局为${ziweiData.userInfo.fiveElementsClass}。
 霍兰德测试显示您的主要类型为${hollandResult.primaryTypeName}（${hollandResult.hollandCode}），得分${hollandResult.primaryScore}分。
 
 ## 性格特质综合
@@ -481,8 +461,5 @@ ${hollandResult.developmentSuggestion}
 ## 工作环境
 适合的工作环境：${hollandResult.workEnvironment}
 
-*注：这是基础综合分析，建议配置DeepSeek API获得更深入的个性化分析。*`,
-        model: 'default-combined',
-        timestamp: new Date().toISOString()
     };
 } 
